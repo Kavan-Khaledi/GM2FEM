@@ -13,7 +13,7 @@ except Exception:
     _HAVE_RBFI = False
 
 import gmsh
-import open3d as o3d
+
 
 
 class GmshBSplineSurfaceBuilder:

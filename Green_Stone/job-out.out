@@ -1,0 +1,90 @@
+Info    : Meshing 1D...
+Info    : [  0%] Meshing curve 4 (Line)
+Info    : [  0%] Meshing curve 9 (Line)
+Info    : [  0%] Meshing curve 8 (Line)
+Info    : [  0%] Meshing curve 7 (Line)
+Info    : [  0%] Meshing curve 1 (Line)
+Info    : [  0%] Meshing curve 2 (Line)
+Info    : [  0%] Meshing curve 11 (Line)
+Info    : [  0%] Meshing curve 12 (Line)
+Info    : [  0%] Meshing curve 5 (Line)
+Info    : [  0%] Meshing curve 6 (Line)
+Info    : [  0%] Meshing curve 10 (Line)
+Info    : [  0%] Meshing curve 3 (Line)
+Info    : Done meshing 1D (Wall 0.00549781s, CPU 0s)
+Info    : Meshing 2D...
+Info    : [  0%] Meshing surface 1 (Plane, Frontal-Delaunay)
+Info    : [  0%] Meshing surface 2 (Plane, Frontal-Delaunay)
+Info    : [  0%] Meshing surface 3 (Plane, Frontal-Delaunay)
+Info    : [  0%] Meshing surface 4 (Plane, Frontal-Delaunay)
+Info    : [  0%] Meshing surface 5 (Plane, Frontal-Delaunay)
+Info    : [  0%] Meshing surface 6 (Plane, Frontal-Delaunay)
+Info    : Done meshing 2D (Wall 0.0313511s, CPU 0.103755s)
+Info    : Meshing 3D...
+Info    : 3D Meshing 1 volume with 1 connected component
+Info    : Tetrahedrizing 4663 nodes...
+Info    : Done tetrahedrizing 4671 nodes (Wall 0.0513229s, CPU 0.049586s)
+Info    : Reconstructing mesh...
+Info    :  - Creating surface mesh
+Info    :  - Identifying boundary edges
+Info    :  - Recovering boundary
+Info    : Done reconstructing mesh (Wall 0.118747s, CPU 0.11069s)
+Info    : Found volume 1
+Info    : It. 0 - 0 nodes created - worst tet radius 5.94762 (nodes removed 0 0)
+Info    : It. 500 - 500 nodes created - worst tet radius 2.26344 (nodes removed 0 0)
+Info    : It. 1000 - 1000 nodes created - worst tet radius 1.86428 (nodes removed 0 0)
+Info    : It. 1500 - 1500 nodes created - worst tet radius 1.64439 (nodes removed 0 0)
+Info    : It. 2000 - 2000 nodes created - worst tet radius 1.51369 (nodes removed 0 0)
+Info    : It. 2500 - 2500 nodes created - worst tet radius 1.42256 (nodes removed 0 0)
+Info    : It. 3000 - 3000 nodes created - worst tet radius 1.34875 (nodes removed 0 0)
+Info    : It. 3500 - 3500 nodes created - worst tet radius 1.28631 (nodes removed 0 0)
+Info    : It. 4000 - 4000 nodes created - worst tet radius 1.23037 (nodes removed 0 0)
+Info    : It. 4500 - 4500 nodes created - worst tet radius 1.18827 (nodes removed 0 0)
+Info    : It. 5000 - 5000 nodes created - worst tet radius 1.14679 (nodes removed 0 0)
+Info    : It. 5500 - 5500 nodes created - worst tet radius 1.11725 (nodes removed 0 0)
+Info    : It. 6000 - 6000 nodes created - worst tet radius 1.08811 (nodes removed 0 0)
+Info    : It. 6500 - 6500 nodes created - worst tet radius 1.06243 (nodes removed 0 0)
+Info    : It. 7000 - 7000 nodes created - worst tet radius 1.03835 (nodes removed 0 0)
+Info    : It. 7500 - 7500 nodes created - worst tet radius 1.01675 (nodes removed 0 0)
+Info    : 3D refinement terminated (12577 nodes total):
+Info    :  - 0 Delaunay cavities modified for star shapeness
+Info    :  - 0 nodes could not be inserted
+Info    :  - 64654 tetrahedra created in 0.296238 sec. (218250 tets/s)
+Info    : 0 node relocations
+Info    : Done meshing 3D (Wall 0.681234s, CPU 0.667069s)
+Info    : Optimizing mesh...
+Info    : Optimizing volume 1
+Info    : Optimization starts (volume = 6.90234e+13) with worst = 0.0110478 / average = 0.781251:
+Info    : 0.00 < quality < 0.10 :       126 elements
+Info    : 0.10 < quality < 0.20 :       409 elements
+Info    : 0.20 < quality < 0.30 :       721 elements
+Info    : 0.30 < quality < 0.40 :      1163 elements
+Info    : 0.40 < quality < 0.50 :      1638 elements
+Info    : 0.50 < quality < 0.60 :      2793 elements
+Info    : 0.60 < quality < 0.70 :      6522 elements
+Info    : 0.70 < quality < 0.80 :     14838 elements
+Info    : 0.80 < quality < 0.90 :     24234 elements
+Info    : 0.90 < quality < 1.00 :     12210 elements
+Info    : 1245 edge swaps, 40 node relocations (volume = 6.90234e+13): worst = 0.118043 / average = 0.793518 (Wall 0.0236655s, CPU 0.023405s)
+Info    : 1259 edge swaps, 43 node relocations (volume = 6.90234e+13): worst = 0.287306 / average = 0.793623 (Wall 0.0285407s, CPU 0.028285s)
+Info    : No ill-shaped tets in the mesh :-)
+Info    : 0.00 < quality < 0.10 :         0 elements
+Info    : 0.10 < quality < 0.20 :         0 elements
+Info    : 0.20 < quality < 0.30 :         1 elements
+Info    : 0.30 < quality < 0.40 :      1151 elements
+Info    : 0.40 < quality < 0.50 :      1583 elements
+Info    : 0.50 < quality < 0.60 :      2697 elements
+Info    : 0.60 < quality < 0.70 :      6409 elements
+Info    : 0.70 < quality < 0.80 :     15048 elements
+Info    : 0.80 < quality < 0.90 :     24481 elements
+Info    : 0.90 < quality < 1.00 :     12153 elements
+Info    : Done optimizing mesh (Wall 0.0953015s, CPU 0.085118s)
+Info    : 12577 nodes 73177 elements
+Info    : Writing 'Green_Stone.msh'...
+Info    : Done writing 'Green_Stone.msh'
+[INFO] integer sediment IDs found: [1 2 3 4 5]
+[INFO] Layer_1: 11256 elems -> volume 2
+[INFO] Layer_2: 746 elems -> volume 3
+[INFO] Layer_3: 359 elems -> volume 4
+[INFO] Layer_4: 2498 elems -> volume 5
+[INFO] Layer_5: 48664 elems -> volume 6

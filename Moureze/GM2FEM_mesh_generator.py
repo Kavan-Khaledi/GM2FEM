@@ -296,6 +296,4 @@ if __name__ == "__main__":
     gmsh.write(OUT_MSH)
 
 
-    if OPEN_GUI:
-        gmsh.fltk.run()
     gmsh.finalize()
