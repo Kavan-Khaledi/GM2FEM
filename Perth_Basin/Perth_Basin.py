@@ -1,5 +1,7 @@
 import gempy as gp
 import numpy as np
+import gempy_viewer as gpv
+
 
 
 
@@ -49,35 +51,19 @@ gp.set_is_fault(
                         "fault_Hypo_fault_W",
                         "fault_Hypo_fault_E",
                         "fault_Urella_North",
-                        "fault_Darling",
-                        "fault_Urella_South"])
+                        "fault_Urella_South",
+                        "fault_Darling"])
 
 # %%
 
 # Compute a solution for the model
 gp.compute_model(geo_model)
 
-
-back_transformed_vertices_list = []
-
-# Loop through each surface in geo_model.solutions.dc_meshes
-for i in range(len(geo_model.solutions.dc_meshes)):
-    # Get the vertices of the current mesh
-    vertices = geo_model.solutions.dc_meshes[i].vertices
-    
-    # Apply the inverse transformation to the vertices
-    transformed_vertices = geo_model.input_transform.apply_inverse(vertices)
-    
-    # Store the transformed vertices in the list or dictionary
-    back_transformed_vertices_list.append(transformed_vertices)
-
-import os
-# Set your output directory
-output_dir = "gempy_gmesh_input"
-os.makedirs(output_dir, exist_ok=True)
-
-np.savez_compressed(
-    os.path.join(output_dir, "gempy_gmesh_surface_vertices.npz"),
-    back_transformed_vertices=np.array(back_transformed_vertices_list, dtype=object)
+import helper
+helper.export_fault_grids_and_ids_txt(
+    geo_model,
+    out_dir="gmsh_io",
+    num_faults=8,         # <- set your number of faults here
+    n_lattice=60,
+    mc_step=2,
 )
-
