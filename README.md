@@ -1,7 +1,7 @@
 # GM2FEM: Geological Model to Finite Element Mesh
 
 GM2FEM is a workflow for converting geological models into 3D Gmsh meshes that include fault surfaces and sedimentary layers.
-It bridges geological modeling tools (e.g. GemPy) with numerical simulation frameworks such as MOOSE for coupled THM (Thermo-Hydro-Mechanical) reservoir modeling.
+It bridges geological modeling tools (e.g. #GemPy) with numerical simulation frameworks such as MOOSE for coupled THM (Thermo-Hydro-Mechanical) reservoir modeling.
 > ⚠️ **Work in Progress:** This project is under active development. Features and interfaces may change.
 ***
 ### Main Script: GM2FEM_mesh_generator.py
